@@ -21,7 +21,7 @@ Download the last version directly to the binaries folder
 For Linux (linux):
 
 ```bash
-curl -L https://github.com/danny270793/git-manager/releases/download/${LAST_VERSION}/git-manager -o ./git-manager.tar.gz
+curl -L https://github.com/danny270793/git-manager/releases/download/${LAST_VERSION}/git-manager -o ./git-manager
 ```
 
 Then copy the binary to the binaries folder
@@ -37,7 +37,7 @@ sudo chmod +x /usr/local/bin/git-manager
 ```
 
 ```bash
-git-manager --version
+git-manager version
 ```
 
 ## Ussage
