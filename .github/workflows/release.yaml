@@ -26,7 +26,7 @@ jobs:
         with:
           files: target/release/git-manager
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Get the uploaded binary URL
         run: echo "Uploaded to ${{ steps.create_release.outputs.upload_url }}"
