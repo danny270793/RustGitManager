@@ -20,13 +20,28 @@ jobs:
       - name: Build Rust code
         run: cargo build --release
 
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            Changes in this Release
+            - First Change
+            - Second Change
+          draft: false
+          prerelease: false
+
       - name: Create release
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
           files: target/release/git-manager
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get the uploaded binary URL
         run: echo "Uploaded to ${{ steps.create_release.outputs.upload_url }}"
