@@ -21,19 +21,7 @@ Download the last version directly to the binaries folder
 For Linux (linux):
 
 ```bash
-curl -L https://github.com/danny270793/git-manager/releases/download/${LAST_VERSION}/git-manager_${LAST_VERSION}_linux_amd64.tar.gz -o ./git-manager.tar.gz
-```
-
-For MacOS (darwin):
-
-```bash
-curl -L https://github.com/danny270793/git-manager/releases/download/${LAST_VERSION}/git-manager_${LAST_VERSION}_darwin_amd64.tar.gz -o ./git-manager.tar.gz
-```
-
-Untar the downloaded file
-
-```bash
-tar -xvf ./git-manager.tar.gz
+curl -L https://github.com/danny270793/git-manager/releases/download/${LAST_VERSION}/git-manager -o ./git-manager.tar.gz
 ```
 
 Then copy the binary to the binaries folder
