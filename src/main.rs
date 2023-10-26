@@ -42,7 +42,7 @@ fn help() {
 }
 
 fn version() {
-    println!("git-manager 1.0.12");
+    println!("git-manager 1.0.13");
 }
 
 fn error(message: &str) {
