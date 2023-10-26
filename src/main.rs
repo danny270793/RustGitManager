@@ -60,20 +60,20 @@ fn main() {
     let action: &String = &arguments[1];
     if action == "version" {
         if arguments.len() >= 3 {
-            error("too much arguments");
+            error(format!("too few arguments for command {}", action).as_str());
         }
         version();
     } else if action == "help" {
         if arguments.len() >= 3 {
-            error("too much arguments");
+            error(format!("too much arguments for command {}", action).as_str());
         }
         help();
     } else if action == "lookup" {
         if arguments.len() <= 2 {
-            error("too few arguments");
+            error(format!("too few arguments for command {}", action).as_str());
         }
-        if arguments.len() >= 3 {
-            error("too much arguments");
+        if arguments.len() >= 4 {
+            error(format!("too much arguments for command {}", action).as_str());
         }
         let path: &String = &arguments[2];
         let mut repos: Vec<collections::HashMap<String, String>> =
