@@ -1,4 +1,4 @@
-# GitManager
+# RustGitManager
 
 Found git repos and it's respective state
 
