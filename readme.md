@@ -60,6 +60,6 @@ Licensed under the [MIT](license.md) License
 
 ## Version
 
-Git-Manager version 1.0.0
+RustGitManager version 1.0.0
 
-Last update 26/10/2023
+Last update 07/11/2023
