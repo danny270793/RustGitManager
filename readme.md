@@ -1,5 +1,13 @@
 # RustGitManager
 
+[![Github pipeline status](https://github.com/danny270793/RustGitManager/actions/workflows/release.yaml/badge.svg)](https://github.com/danny270793/RustGitManager/actions/workflows/release.yaml)
+
+![GitHub repo size](https://img.shields.io/github/repo-size/danny270793/RustGitManager)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/danny270793/RustGitManager)
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/danny270793/RustGitManager)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/danny270793/RustGitManager/total)
+
 Found git repos and it's respective state
 
 ## Installation
